@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.log
+.DS_Store
+Thumbs.db
+.codex/
+.design-reference/
+out/
+.qa/
