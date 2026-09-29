@@ -21,7 +21,7 @@
 3. 기존 package.json에 `gsap`, `lenis` 의존성만 추가한다. 기존 React, 라우터, Tailwind, Supabase 의존성과 설정은 유지한다.
 4. 기존 프로젝트 환경 변수에 `VITE_LEGACY_ORIGIN=`을 지정한다. 빈 값이면 로그인·문의 등 링크가 같은 React Router의 기존 경로로 이동한다. 현재 독립 미리보기의 기본값은 `https://idigitalware.com`이다.
 5. 기존 App.tsx, router/config.tsx, i18n, SchemaInjector, 인증, Supabase 함수, 관리자·고객 문의 페이지는 교체하지 않는다. 이 저장소의 App.tsx는 네 페이지를 확인하기 위한 독립 미리보기용이다.
-6. 기존 BASE_PATH를 유지한다. 에셋 경로는 Vite의 `import.meta.env.BASE_URL`을 사용한다. 기존 도메인은 `/`, GitHub Pages는 `/digital_ware/`로 빌드한다.
+6. 기존 BASE_PATH를 유지한다. 에셋 경로는 Vite의 `import.meta.env.BASE_URL`을 사용한다. 기존 도메인은 `/`, GitHub Pages는 `/digital_ware_ver.2/`로 빌드한다.
 
 공지사항, 구매·제휴문의, 고객문의, 오시는 길, 로그인과 회원가입 경로도 리뉴얼 UI로 구성했다. 현재 독립 미리보기의 폼은 화면 상태를 확인하는 프론트엔드 접수 완료 동작이며, 운영 적용 시 기존 Supabase 조회·저장·인증 함수를 같은 submit handler에 연결한다. 푸터의 개인정보취급방침과 이용약관은 페이지 이동 없이 공통 모달로 표시한다.
 
@@ -35,7 +35,7 @@ CSS는 `.dw-renewal` 및 `dw-` 접두사로 구분하며 기존 `.container`, `.
 - 챗봇은 모든 페이지의 우측 하단을 따라다니며, 미리 정의된 질문을 선택하면 관련 답변과 서비스·문의 링크를 제공한다. 답변 데이터는 `src/components/renewal/Chatbot.tsx`에서 관리한다.
 - 원격지원은 기존 고객지원 경로로 연결했다. 제공된 기존 Footer도 실제 원격접속 URL은 없었으므로 운영사가 사용하는 원격지원 주소를 정하면 교체한다.
 - 메인 퀵메뉴는 접기/펼치기, 모바일 메뉴는 열기/닫기·Escape·페이지 이동 시 닫기를 제공한다.
-- 고객사 카드는 좌측에서 우측으로 이어지는 무한 흐름 모션을 사용하며, 모든 카드에는 녹색 테두리와 글래스 광택 호버를 공통 적용한다.
+- 고객사 카드는 좌측에서 우측으로 이어지는 무한 흐름 모션을 사용하며, 모든 카드에는 블루 테두리와 글래스 광택 호버를 공통 적용한다.
 - SI·마이그레이션·PMS의 하단 문의 섹션은 `public/assets/contact-bg.png`를 공통 배경으로 사용한다.
 - 파비콘은 `public/favicon.png`, 소셜 공유 이미지는 `public/og-image.png`를 사용하며 메타 태그는 `index.html`에 있다.
 
