@@ -108,7 +108,7 @@ function Shell({ page, children }: { page: PageKey; children: ReactNode }) {
       <section
         className="dw-portal-hero"
         style={{
-          backgroundImage: `url(${import.meta.env.BASE_URL}assets/subvisual/${info.hero})`,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(${import.meta.env.BASE_URL}assets/subvisual/${info.hero})`,
         }}
         aria-label={info.section}
       >

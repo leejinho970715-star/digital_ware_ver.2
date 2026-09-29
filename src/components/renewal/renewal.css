@@ -447,6 +447,13 @@
   object-fit: cover;
   object-position: center;
 }
+.dw-home-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.38));
+  pointer-events: none;
+}
 .dw-home-hero > .dw-container {
   z-index: 1;
 }
@@ -660,7 +667,7 @@
   height: calc(193 * var(--u));
   right: 0;
   bottom: 0;
-  opacity: 0.3;
+  opacity: 1;
 }
 .dw-government-feature h3,
 .dw-government-small h3 {
@@ -3576,7 +3583,7 @@
   background-image: var(--about-hero);
   background-position: center;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .dw-about-hero-grid {
   height: 100%;
@@ -3610,6 +3617,7 @@
   position: absolute;
   inset: 0;
   background-image: var(--about-story);
+  opacity: 0.2;
   background-position: center top;
   background-size: cover;
   pointer-events: none;
@@ -3699,7 +3707,7 @@
   background-image: var(--about-services);
   background-position: center;
   background-size: cover;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .dw-about-services-orb {
   position: absolute;
@@ -3708,13 +3716,13 @@
   left: 50%;
   top: calc(81 * var(--u));
   translate: -50% 0;
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .dw-about-bubbles .dw-art {
   position: absolute;
   width: calc(30 * var(--u));
   height: calc(30 * var(--u));
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .dw-about-bubbles .dw-art:nth-child(1) {
   left: 23%;

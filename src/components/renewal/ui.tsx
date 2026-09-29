@@ -330,7 +330,7 @@ export function Contact({ page }: { page: "si" | "migration" | "pms" }) {
     <section
       className="dw-contact"
       style={{
-        backgroundImage: `url(${import.meta.env.BASE_URL}assets/contact-bg.png)`,
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.78)), url(${import.meta.env.BASE_URL}assets/contact-bg.png)`,
       }}
     >
       <div className="dw-container dw-center" data-reveal>
