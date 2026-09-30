@@ -158,7 +158,7 @@
   white-space: nowrap;
 }
 .dw-renewal .dw-button:hover {
-  background: #2454bd;
+  background: var(--navy);
   box-shadow: 0 6px 24px #2b61d632;
 }
 .dw-renewal .dw-button-dark {
@@ -2566,6 +2566,10 @@
   color: #fff;
   font-weight: 700;
 }
+.dw-board-tools button:hover,
+.dw-legal-modal footer button:hover {
+  background: var(--navy);
+}
 .dw-board {
   border-top: 2px solid #223351;
 }
@@ -2708,7 +2712,7 @@
 }
 .dw-renewal button.dw-submit:hover,
 .dw-renewal a.dw-submit:hover {
-  background: #2454bd !important;
+  background: var(--navy) !important;
   transform: translateY(-2px);
   box-shadow: 0 14px 30px rgba(43, 97, 214, 0.3);
 }
